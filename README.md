@@ -1,16 +1,66 @@
-# flutter_udemy_course
+# Notes
 
-A new Flutter project.
+General notes from the Udemy.com hosted "Flutter & Dart - The Complete Guide [2020 Edition]" by Max Schwarzmuller.
 
-## Getting Started
+## Primatives / Keywords
+void
+int
+double  (no float)
+num (parent class)
 
-This project is a starting point for a Flutter application.
+// Comment
+var variableName;		<-- best practice to enable type inference flexibility
+String stringName;
+var myList = [1, 2, 3];
+<Widget>[] <-- list of widgets
 
-A few resources to get you started if this is your first Flutter project:
+## Widget Types: Output & Input (Visible)
+- RaisedButton()
+- Text()
+- Card()
+- Container()
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Widget Types: Layout & Control (Invisible)
+- Row()
+- Column()
+- ListView()
+- Container()
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Class Example: Very Basic
+class Person {
+  String name;
+  int age;
+
+  Person(String inputName, int inputAge) {
+    this.name = inputName;
+    this.age = inputAge;
+  }
+}
+
+void main() {
+  var person1 = Person("Max", 30);
+  print(p1.name);
+}
+
+## Class Example: Adding Optional Keyword Arguments
+Optional keyword arguments:
+Person({@required String inputName, int inputAge = 30})  <-- @required is Flutter, not Dart
+...
+var p1 = Person(inputName: "Max", age: 30);
+
+## Class Example: Minimal StatelessWidget Descendent
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  Widget build(BuildContext context) {
+    return MaterialApp(home: Text("Hello!"));
+  }
+}
+
+## An abbreviated main() syntax
+void main() => runApp(MyApp());
+
