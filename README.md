@@ -14,6 +14,12 @@ String stringName;
 var myList = [1, 2, 3];
 <Widget>[] <-- list of widgets
 
+Lists:
+- https://dart.dev/guides/language/language-tour#lists
+- https://api.dartlang.org/stable/2.3.1/dart-core/List-class.html
+var aNestedList = [[1,2,3], [1,2,3]]; 
+aNestedList.length
+
 ## Widget Types: Output & Input (Visible)
 - RaisedButton()
 - Text()

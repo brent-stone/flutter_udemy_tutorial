@@ -5,11 +5,19 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  var questionIndex = 0;
+
   void answerQuestion() {
-    print("Answer Chosen!");
+    print(questionIndex);
+    questionIndex = questionIndex + 1;
   }
 
   Widget build(BuildContext context) {
+    var questions = [
+      "What\'s your favorite color?",
+      "What\'s your favorite city?",
+    ];
+
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
@@ -17,7 +25,7 @@ class MyApp extends StatelessWidget {
         ),
         body: Column(
           children: [
-            Text("The Question!"),
+            Text(questions.elementAt(questionIndex)), // or questions[0]
             RaisedButton(
               child: Text("Answer 1"),
               onPressed: answerQuestion, // no () to pass pointer to function
