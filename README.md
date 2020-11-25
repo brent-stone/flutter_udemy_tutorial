@@ -18,6 +18,7 @@ General notes from the Udemy.com hosted "Flutter & Dart - The Complete Guide [20
 - _PrivateClass
 - _privateFeature
 - final String questionText;  <-- immutable feature
+- ... <--- spread operator
 
 Lists:
 - https://dart.dev/guides/language/language-tour#lists
