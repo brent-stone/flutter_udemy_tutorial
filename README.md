@@ -73,3 +73,6 @@ class MyApp extends StatelessWidget {
 ## An abbreviated main() syntax
 void main() => runApp(MyApp());
 
+## Container
+- child - padding - border - margin (inner to outer space)
+
