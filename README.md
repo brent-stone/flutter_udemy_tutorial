@@ -1,6 +1,8 @@
 # Notes
 
 General notes from the Udemy.com hosted "Flutter & Dart - The Complete Guide [2020 Edition]" by Max Schwarzmuller.
+- dartpad.dev
+- flutter.dev -> go to Docs
 
 ## Primatives / Keywords
 - void

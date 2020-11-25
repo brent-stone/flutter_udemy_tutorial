@@ -1,6 +1,7 @@
 import "package:flutter/material.dart";
 
 import './question.dart';
+import './answer.dart';
 
 void main() {
   runApp(MyApp());
@@ -40,21 +41,9 @@ class _MyAppState extends State<MyApp> {
             Question(
               questions[_questionIndex], // or questions[0]
             ),
-            RaisedButton(
-              child: Text("Answer 1"),
-              onPressed: _answerQuestion, // no () to pass pointer to function
-            ),
-            RaisedButton(
-              child: Text("Answer 2"),
-              onPressed: () => print("This is an anonymous function for 2"),
-            ),
-            RaisedButton(
-              child: Text("Answer 3"),
-              onPressed: () {
-                // a larger anonymous function
-                print("answer 3 was chosen");
-              },
-            ),
+            Answer(_answerQuestion),
+            Answer(_answerQuestion),
+            Answer(_answerQuestion),
           ],
         ),
       ),
