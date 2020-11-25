@@ -3,16 +3,19 @@
 General notes from the Udemy.com hosted "Flutter & Dart - The Complete Guide [2020 Edition]" by Max Schwarzmuller.
 
 ## Primatives / Keywords
-void
-int
-double  (no float)
-num (parent class)
+- void
+- int
+- double  (no float)
+- num (parent class)
 
-// Comment
-var variableName;		<-- best practice to enable type inference flexibility
-String stringName;
-var myList = [1, 2, 3];
-<Widget>[] <-- list of widgets
+- // Comment
+- var variableName;		<-- best practice to enable type inference flexibility
+- String stringName;
+- var myList = [1, 2, 3];
+- <Widget>[] <-- list of widgets
+- _PrivateClass
+- _privateFeature
+- final String questionText;  <-- immutable feature
 
 Lists:
 - https://dart.dev/guides/language/language-tour#lists
