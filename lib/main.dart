@@ -1,15 +1,25 @@
-import 'package:flutter/material.dart';
+import "package:flutter/material.dart";
 
 void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    return MyAppState();
+  }
+}
+
+class MyAppState extends State<MyApp> {
   var questionIndex = 0;
 
   void answerQuestion() {
+    setState(() {
+      questionIndex = questionIndex + 1;
+    });
     print(questionIndex);
-    questionIndex = questionIndex + 1;
   }
 
   Widget build(BuildContext context) {
